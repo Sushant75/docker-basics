@@ -5,7 +5,7 @@ FROM node:14-alpine
 WORKDIR /usr/app
 
 # Copying the dependencies required for npm
-COPY /package.json ./
+COPY ./package.json ./
 
 # Install some dependencies
 RUN npm install
