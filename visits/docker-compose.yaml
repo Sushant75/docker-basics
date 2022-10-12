@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  redis-server:
+    image: 'redis'
+  node-app:
+    build: .
+    restart: always
+    ports:
+      - "4001:8081"
+
+
+# Docker Compose Commands
+
+# Command to run docker container through a template
+
+# docker-compose up
+
+# Command to run docker container with building of an image
+
+# docker-compose up --build
+
+# Commands to run in detached mode
+
+# docker-compose up -d
+
+# docker-compose up --build -d
